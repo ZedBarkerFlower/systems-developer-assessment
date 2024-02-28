@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Html\template.html" />
+    <None Remove="Assets\Scripts\bootstrap.bundle.min.js" />
+    <None Remove="Assets\Scripts\jquery-3.3.1.min.js" />
+    <None Remove="Assets\Scripts\jquery.validate.min.js" />
+    <None Remove="Assets\Scripts\jquery.validate.unobtrusive.min.js" />
+    <None Remove="Assets\Scripts\unobtrusive-bootstrap.js" />
+    <None Remove="Assets\Styles\bootstrap.min.css" />
+    <None Remove="Assets\Styles\custom.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Html\template.html" />
+    <Content Include="Assets\Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Assets\Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Assets\Scripts\jquery.validate.min.js" />
+    <Content Include="Assets\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Assets\Scripts\unobtrusive-bootstrap.js" />
+    <Content Include="Assets\Styles\bootstrap.min.css" />
+    <Content Include="Assets\Styles\custom.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SystemWebAdapters.CoreServices" Version="1.3.2" />
+    <PackageReference Include="Yarp.ReverseProxy" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+
+</Project>

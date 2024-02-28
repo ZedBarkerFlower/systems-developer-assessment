@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetC.DeveloperExam.WebCore", "NetC.DeveloperExam.WebCore\NetC.DeveloperExam.WebCore.csproj", "{8C686C86-3E07-4487-92C8-474BAA230372}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C686C86-3E07-4487-92C8-474BAA230372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C686C86-3E07-4487-92C8-474BAA230372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C686C86-3E07-4487-92C8-474BAA230372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C686C86-3E07-4487-92C8-474BAA230372}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {446FCDA0-BAA9-4DA6-AB84-F0F3B055010F}
+	EndGlobalSection
+EndGlobal
