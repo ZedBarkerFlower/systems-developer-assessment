@@ -21,6 +21,13 @@ app.UseAuthorization();
 app.UseSystemWebAdapters();
 
 app.MapDefaultControllerRoute();
-app.MapForwarder("/{**catch-all}", app.Configuration["ProxyTo"]).Add(static builder => ((RouteEndpointBuilder)builder).Order = int.MaxValue);
+
+app.UseEndpoints(endpoints =>
+{
+    _ = endpoints.MapGet("{resource}.axd/{*pathInfo}", (string resource, string pathInfo, HttpContext context) => {
+        context.Response.StatusCode = 404;
+        return Task.CompletedTask;
+    });
+}); // todo check this does what the origional file did
 
 app.Run();

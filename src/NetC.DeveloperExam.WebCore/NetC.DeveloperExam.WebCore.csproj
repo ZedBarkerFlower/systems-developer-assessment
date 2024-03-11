@@ -5,26 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Assets\Html\template.html" />
-    <None Remove="Assets\Scripts\bootstrap.bundle.min.js" />
-    <None Remove="Assets\Scripts\jquery-3.3.1.min.js" />
-    <None Remove="Assets\Scripts\jquery.validate.min.js" />
-    <None Remove="Assets\Scripts\jquery.validate.unobtrusive.min.js" />
-    <None Remove="Assets\Scripts\unobtrusive-bootstrap.js" />
-    <None Remove="Assets\Styles\bootstrap.min.css" />
-    <None Remove="Assets\Styles\custom.css" />
-  </ItemGroup>
-
+  
   <ItemGroup>
     <Content Include="Assets\Html\template.html" />
-    <Content Include="Assets\Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Assets\Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Assets\Scripts\jquery.validate.min.js" />
-    <Content Include="Assets\Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Assets\Scripts\unobtrusive-bootstrap.js" />
-    <Content Include="Assets\Styles\bootstrap.min.css" />
     <Content Include="Assets\Styles\custom.css" />
   </ItemGroup>
 
