@@ -8,7 +8,6 @@
   
   <ItemGroup>
     <Content Include="Assets\Html\template.html" />
-    <Content Include="Assets\Styles\custom.css" />
   </ItemGroup>
 
   <ItemGroup>

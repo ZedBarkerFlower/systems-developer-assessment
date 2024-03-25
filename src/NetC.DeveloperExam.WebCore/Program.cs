@@ -1,4 +1,3 @@
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSystemWebAdapters();
 builder.Services.AddHttpForwarder();
@@ -20,14 +19,8 @@ app.UseRouting();
 app.UseAuthorization();
 app.UseSystemWebAdapters();
 
-app.MapDefaultControllerRoute();
+app.MapGet("/", () => "Hello World!");
 
-app.UseEndpoints(endpoints =>
-{
-    _ = endpoints.MapGet("{resource}.axd/{*pathInfo}", (string resource, string pathInfo, HttpContext context) => {
-        context.Response.StatusCode = 404;
-        return Task.CompletedTask;
-    });
-}); // todo check this does what the origional file did
+app.MapDefaultControllerRoute();
 
 app.Run();
